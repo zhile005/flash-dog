@@ -26,7 +26,6 @@ public class AsynMongoDbAppender extends MongoDbAppender {
     @Override
     public void append(final DBObject bson) {
         executorService.execute(new Runnable() {
-            @Override
             public void run() {
                 try {
                     _append(bson);

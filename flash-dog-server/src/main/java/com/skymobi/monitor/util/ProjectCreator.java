@@ -25,7 +25,7 @@ public class ProjectCreator {
 
     public void createSelf() {
         Project project = new Project();
-        project.setAlias("闪电狗");
+        project.setAlias("电子渠道监控系统");
         project.setName("flash_dog");
         MongoDbAppender appender = findMongoAppender();
         Assert.notNull(appender, "can't find a MongoDbAppender ,please config one in log4j.properties");

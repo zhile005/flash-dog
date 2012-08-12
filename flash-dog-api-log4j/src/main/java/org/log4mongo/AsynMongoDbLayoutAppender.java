@@ -41,7 +41,6 @@ public class AsynMongoDbLayoutAppender extends MongoDbPatternLayoutAppender {
     @Override
     protected void append(final LoggingEvent loggingEvent) {
         executorService.execute(new Runnable() {
-            @Override
             public void run() {
                 try {
                     _append(loggingEvent);

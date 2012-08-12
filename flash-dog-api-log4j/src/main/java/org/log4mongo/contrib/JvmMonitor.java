@@ -40,7 +40,6 @@ public class JvmMonitor {
         logger.info("jvm monitor start  ...");
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
         executorService.scheduleAtFixedRate(new Runnable() {
-            @Override
             public void run() {
                 record();
             }
